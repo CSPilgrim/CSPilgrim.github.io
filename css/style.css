@@ -1,0 +1,74 @@
+/* Fonts */
+@import url("https://use.typekit.net/dzg6lro.css");
+
+
+
+
+/* Variables */
+
+:root {
+    --header-orange: #FF9900;
+    --light-color: #EBEAEA;
+    --medium-color: #D0CFCF;
+    --dark-color: #9B9B9B;
+}
+
+
+
+/* Core Elements */
+
+body {
+    font-family:'Eras Medium ITC', sans-serif;
+    background: white;
+    color: black;
+}
+
+section.first {
+    background: var(--light-color);
+}
+
+section.second {
+    background: var(--medium-color);
+}
+
+section.third {
+    background: var(--dark-color);
+}
+
+section.form {
+    background: var(--light-color);
+}
+
+footer {
+    background: var(--header-orange);
+}
+
+
+/* Nav styles */
+
+nav ul {
+    background: var(--header-orange);
+    font-family: flood-std, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+
+}
+
+nav ul li:first-child{
+    margin-left: 0;}
+
+
+a {
+    font-size: 16px;
+}
