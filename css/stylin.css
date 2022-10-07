@@ -17,6 +17,18 @@
 
 /* Core Elements */
 
+
+div.banner{
+    z-index: 1;
+}
+
+
+body {
+    font-family:'Eras Medium ITC', sans-serif;s
+    background: white;
+    color: black;
+}
+
 body.img {
     background: var(--header-orange);
     position: absolute;
@@ -24,22 +36,6 @@ body.img {
     top: 0;
     margin: 0;
 
-}
-
-body {
-    font-family:'Eras Medium ITC', sans-serif;
-    background: white;
-    color: black;
-}
-
-pre {
-    font-family: flood-std, sans-serif;
-    font-size: 75px;
-    align-content: center;
-}
-
-section.top {
-    font-family: flood-std, sans-serif;
 }
 
 section.first {
@@ -63,33 +59,27 @@ footer {
 }
 
 
-.logo {
-    position: absolute;
-    z-index: 1;
-}
-
-
 
 /* Nav styles */
 
 nav {
     background: var(--header-orange);
+    position: relative;
+    list-style: none;
     top: 0;
     width: 100vw;
-    padding: 68px;
 }
 
 nav ul {
-    font-family: flood-std, sans-serif;
+    font-family: 'flood-std', sans-serif;
     font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
     list-style: none;
-    position: relative;
+    display: inline;
     justify-content: center;
-    top: 0;
-    left: 0;
-    margin-left: 150px;
+    position: relative;
+    text-align: center;
+    margin-left: 140px;
+    margin-top: 0;
 }
 
 nav ul li {
@@ -137,19 +127,6 @@ nav ul li a:hover:not(.active) {
     background-color: rgb(124, 124, 124);
   }
   
-
-
-
-/* Sections */
-
-div.home-brisket {
-    float: right;
-    width: 40%;
-    padding: 2px;
-}
-
-div.home-recipes {
-    float: right;
-    width: 40%;
-    padding: 2px;
-}
+  .active {
+    background-color: #04AA6D;
+  }
