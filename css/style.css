@@ -110,8 +110,14 @@ div.top-image {
 h1 {
     font-family: flood-std, sans-serif;
     margin-left: 5%;
-    font-size: 28px;
     } 
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
 
 h2 {
     font-family: flood-std, sans-serif;
@@ -204,6 +210,14 @@ section.form {
 footer {
     background: var(--header-orange);
     padding: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    .footer-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
