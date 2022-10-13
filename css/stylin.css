@@ -3,7 +3,6 @@
 
 
 
-
 /* Variables */
 
 :root {
@@ -15,17 +14,120 @@
 
 
 
+/* #banner styles */
+
+#banner {
+    position: relative;
+    list-style: none;
+    top: 0;
+    width: 100vw;
+}
+
+#banner img {
+    float: right;
+}
+
+#banner ul {
+    font-family: 'flood-std', sans-serif;
+    font-size: 36px;
+    list-style: none;
+}
+
+#banner ul li {
+    display: inline;
+    margin: 0;
+}
+
+#banner ul li:first-child {
+    box-sizing: border-box;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    background: var(--header-orange);
+    border: 4px solid #000000;
+}
+
+#banner ul li:nth-child(2) {
+    box-sizing: border-box;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    background: var(--header-orange);
+    border: 4px solid #000000;
+}
+
+#banner ul li:nth-child(3) {
+    box-sizing: border-box;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    background: var(--header-orange);
+    border: 4px solid #000000;
+}
+
+#banner ul li:nth-child(4) {
+    box-sizing: border-box;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    background: var(--header-orange);
+    border: 4px solid #000000;
+}
+
+#banner ul li a {
+    text-decoration: none;
+}
+
+#banner ul li a:hover:not(.active) {
+    background-color: rgb(124, 124, 124);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+
+
 /* Core Elements */
 
 
-div.banner{
-    z-index: 1;
+img {
+    max-width: 100%;
+}
+
+#banner {
+    display: inline;
+    justify-content: baseline;
+}
+
+h1 {
+    font-family: flood-std, sans-serif;
+    margin-left: 5%;
+    } 
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
 }
 
 
+h2 {
+    font-family: flood-std, sans-serif;
+    margin-left: 5%;
+    padding: 25px;
+}
+
+h3 {
+    font-family: flood-std, sans-serif;
+    margin-left: 5%;
+    padding: 25px;
+}
+
+p {
+    font-family: 'Eras Medium ITC', sans-serif;
+    font-size: 16px;
+}
+
 body {
-    font-family:'Eras Medium ITC', sans-serif;s
-    background: white;
+    font-family:'Eras Medium ITC', sans-serif;
+    background: var(--medium-color);
     color: black;
 }
 
@@ -35,19 +137,34 @@ body.img {
     left: 0;
     top: 0;
     margin: 0;
-
 }
 
-section.first {
-    background: var(--light-color);
+button {
+    border: 2px;
+    color: var(--header-orange);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
 
-section.second {
-    background: var(--medium-color);
+section.top {
+    display: flex;
 }
 
-section.third {
-    background: var(--dark-color);
+div.top-image {
+    background-size: 100% 50%;
+}
+
+section.top pre{
+    font-family: flood-std, sans-serif; 
+    font-size: 84px;
+    text-align: justify;
+    max-width: 100%;
 }
 
 section.form {
@@ -58,75 +175,143 @@ footer {
     background: var(--header-orange);
 }
 
-
-
-/* Nav styles */
-
-nav {
-    background: var(--header-orange);
-    position: relative;
+.footer-nav ul {
     list-style: none;
-    top: 0;
-    width: 100vw;
 }
 
-nav ul {
-    font-family: 'flood-std', sans-serif;
-    font-size: 36px;
-    list-style: none;
+.footer-nav ul li {
     display: inline;
-    justify-content: center;
+}
+
+.button {
+    border-radius: 12px;
+    float: right;
+    margin-right: 2rem;
+
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: black; 
+    color: white;
+  }
+
+
+@media screen and (max-width: 480px) {
+    .footer-nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/*     Home Sections     */
+
+div.top {
     position: relative;
+}
+
+div.top-text {
+    position: absolute;
+    color: var(--light-color);
+    padding-top: 50px;
+}
+
+div.home-meats img {
+    width: 235px;
+    padding-left: 50px;
+    display: inline;
+}
+
+div.home-brisket {
+    float: right;
+    width: 40%;
+    padding: 2px;
+}
+
+div.home-beef {
     text-align: center;
-    margin-left: 140px;
-    margin-top: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0;
+div.home-pork {
+    text-align: center;
 }
 
-nav ul li:first-child {
-    box-sizing: border-box;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
-    background: #D9D9D9;
-    border: 4px solid #000000;
+div.home-poultry {
+    text-align: center;
 }
 
-nav ul li:nth-child(2) {
-    box-sizing: border-box;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
-    background: #D9D9D9;
-    border: 4px solid #000000;
+div.home-recipes p {
+    font-size: 48px;
+    font-weight: 800;
+    font-style: oblique;
+    text-align: left;
 }
 
-nav ul li:nth-child(3) {
-    box-sizing: border-box;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
-    background: #D9D9D9;
-    border: 4px solid #000000;
+div.home-recipes {
+    float: right;
+    width: 40%;
+    padding: 2px;
 }
 
-nav ul li:nth-child(4) {
-    box-sizing: border-box;
-    padding-inline-start: 25px;
-    padding-inline-end: 25px;
-    background: #D9D9D9;
-    border: 4px solid #000000;
+div.home-ribs {
+    padding-left: 2rem;
 }
 
-nav ul li a {
-    text-decoration: none;
+
+
+/*     Recipe Sections     */
+
+div.recipe-meats {
+   max-width: 100%;
+    display: flex;
+    vertical-align: top;
+    text-align: center;
+    gap: 2rem; 
 }
 
-nav ul li a:hover:not(.active) {
-    background-color: rgb(124, 124, 124);
-  }
-  
-  .active {
-    background-color: #04AA6D;
-  }
+div.recipe-meats img {
+    width: 235px;
+    padding-left: 5px;
+}
+
+div.recipe-meats p {
+    display: block;
+    text-align: justify;
+}
+
+section.first th {
+    padding: 15px;
+}
+
+section.first td {
+    padding-left: 15px;
+}
+
+div.recipe-preview {
+    display: flex;
+}
+
+div.recipe-preview img {
+    width: 400px;
+    padding-left: 5px;
+}
+
+div.recipe-preview p {
+    text-align: justify;
+}
+
+
+
+/*     About Sections     */
+
+div.form {
+    display: inline-block;
+    float: right;
+}
+
+#fname {
+    margin-right: 5%;
+}

@@ -5,23 +5,38 @@
     <meta charset="utf-8">
     <meta name="viewport" content="device-width, initial-scale=1, minimum-scale=0.5, maximum-scale=0.5, minimal-ui">
     <title>Pilgrim Smoking</title>
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/stylin.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="Icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="Icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Icons/favicon-16x16.png">
+    <link rel="manifest" href="Icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <div class="banner">
-        <img class="logo" src="../Images/PilgrimSmoking-small.jpg" alt="Offset smoker">
-    </div>
-    <div>
-        <nav class="header-nav">
-            <ul>
+    <div id="banner">
+        <img id="logo" src="Images/PilgrimSmoking-small.jpg" alt="Offset smoker">
+
+            <ul class="header-nav">
                 <li><a href="index.html" title="Home Page">Home</a></li>
                 <li><a href="meats.html" title="Meats">Meats</a></li>
                 <li><a href="recipes.html" title="Recipes">Recipes</a></li>
                 <li><a href="about.html" title="About">About</a></li>
             </ul>
-        </nav>
     </div>
     <section class="top">
         <div class="top-text">
@@ -32,35 +47,33 @@
         </div>
 
         <div class="top-image">
-            <img src="../Images/charcoal1.jpg" alt="Lump charcoal" height="450px" width="100%">
+            <img src="Images/charcoal1.jpg" alt="Lump charcoal">
         </div>
     </section>
-
-   <!--  Gighy image
-    <iframe src="https://giphy.com/embed/26n6J8avOhgfddSh2" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/sonnysbbq-fire-bbq-26n6J8avOhgfddSh2">via GIPHY</a></p>
-   -->
 
    <h1>Welcome to Pilgrim Smoking!</h1>
 
     <section class="first">
         <h2>Meats</h2>
         <div class="home-brisket">
-            <img src="../Images/Brisket1.jpg" alt="Man holding cut brisket" height="500px"/>
+            <img src="Images/Brisket1.jpg" alt="Man holding cut brisket" height="500px"/>
         </div>
 
-        <div class="home-beef">
-            <img src="../Images/beef-transparent2.png" alt="Beef head silhouette">
-          <div class="desc">Beef.</div>
-        </div>
+        <div class="home-meats">
+            <div class="home-beef">
+                <img src="Images/beef-transparent2.png" alt="Beef head silhouette">
+                <p>Beef.</p>
+            </div>
 
-        <div class="home-pork">
-            <img src="../Images/pork-transparent2.png" alt="Pig silhouette">
-          <div class="desc">Pork.</div>
-        </div>
+            <div class="home-pork">
+                <img src="Images/pork-transparent2.png" alt="Pig silhouette">
+                <p>Pork.</p>
+            </div>
 
-        <div class="home-poultry">
-            <img src="../Images/poultry-transparent2.png" alt="Chicken silhouette">
-          <div class="desc">Poultry.</div>
+            <div class="home-poultry">
+                <img src="Images/poultry-transparent2.png" alt="Chicken silhouette">
+                <p>Poultry.</p>
+            </div>
         </div>      
     </section>
 
@@ -72,22 +85,23 @@
         </div>
         
         <div class="home-ribs">
-            <img src="../Images/Ribs1.jpg" alt="Smoked ribs on cutting board" height="500px"/>
+            <img src="Images/Ribs1.jpg" alt="Smoked ribs on cutting board" height="500px"/>
         </div>
     </section>
 
     <section class="third">
-        <p>May you always be surrounded by good friends and great barbecue.</p>
-        <img src="../Images/Group1.jpg" alt="Grill with group of people in background" />
-        <button>Subscribe now!</button>
+        <h3>May you always be surrounded by good friends and great barbecue.</h3>        
+        <img src="Images/Group1.jpg" alt="Grill with group of people in background" />
         <br><br>
 
-        <a href="https://heygrillhey.com/" title="HeyGrillHey">Check out HeyGrillHey!</a>
+        <a href="https://heygrillhey.com/" title="HeyGrillHey">Check out HeyGrillHey for more recipes!</a>
     </section>
 
     <footer>
-        <h3>Pilgrim Smoking</h3>
+        <button class="button">Subscribe now!</button>
+        <h4>Pilgrim Smoking</h4>
         <p>Copyright 2022</p>
+        
 
         <nav class="footer-nav">
             <ul>
@@ -97,6 +111,8 @@
                 <li><a href="about.html" title="About">About</a></li>
             </ul>
         </nav>
+
+       
     </footer>
 </body>
 </html>
