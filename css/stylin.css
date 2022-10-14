@@ -156,8 +156,9 @@ section.top {
     display: flex;
 }
 
-div.top-image {
-    background-size: 100% 50%;
+#charcoal1 {
+    width: 100vw;
+    max-height: 450px;
 }
 
 section.top pre{
